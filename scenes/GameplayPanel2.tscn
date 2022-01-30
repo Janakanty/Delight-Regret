@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/GameplayPanel2.gd" type="Script" id=1]
+[ext_resource path="res://grapfhics/red_evil.png" type="Texture" id=2]
+[ext_resource path="res://grapfhics/blue_bad.png" type="Texture" id=3]
+[ext_resource path="res://grapfhics/green_bad.png" type="Texture" id=4]
+[ext_resource path="res://grapfhics/rame/ramka smok.png" type="Texture" id=5]
+[ext_resource path="res://music/sounds/Shuffle.wav" type="AudioStream" id=6]
+
+[node name="GameplayPanel" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="base" type="ColorRect" parent="."]
+margin_left = 41.0
+margin_top = 1.0
+margin_right = 92.0
+margin_bottom = 504.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="marked" type="TextureRect" parent="."]
+margin_left = -12.0655
+margin_top = -11.7669
+margin_right = 145.934
+margin_bottom = 146.233
+texture = ExtResource( 5 )
+
+[node name="color1" type="TextureRect" parent="."]
+margin_right = 134.0
+margin_bottom = 134.0
+texture = ExtResource( 2 )
+
+[node name="color2" type="TextureRect" parent="."]
+margin_top = 185.726
+margin_right = 134.0
+margin_bottom = 319.726
+texture = ExtResource( 3 )
+
+[node name="color3" type="TextureRect" parent="."]
+margin_top = 371.361
+margin_right = 134.0
+margin_bottom = 505.361
+texture = ExtResource( 4 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -6.0

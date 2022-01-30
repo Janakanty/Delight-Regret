@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://grapfhics/light/a3.png" type="Texture" id=1]
+[ext_resource path="res://grapfhics/light/a6.png" type="Texture" id=2]
+[ext_resource path="res://grapfhics/light/a1.png" type="Texture" id=3]
+[ext_resource path="res://grapfhics/light/a4.png" type="Texture" id=4]
+[ext_resource path="res://grapfhics/light/a5.png" type="Texture" id=5]
+[ext_resource path="res://grapfhics/light/a2.png" type="Texture" id=6]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+light_mode = 2
+
+[sub_resource type="AnimatedTexture" id=2]
+flags = 4
+frames = 6
+fps = 3.0
+frame_0/texture = ExtResource( 3 )
+frame_1/texture = ExtResource( 6 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 1 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 4 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 5 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 2 )
+frame_5/delay_sec = 0.0
+
+[node name="Light" type="Node2D"]
+
+[node name="Light2D" type="Light2D" parent="."]
+light_mask = 1024
+material = SubResource( 1 )
+position = Vector2( -155.563, 0 )
+scale = Vector2( 0.8, 1 )
+texture = SubResource( 2 )
+mode = 2
+range_item_cull_mask = -2147482624

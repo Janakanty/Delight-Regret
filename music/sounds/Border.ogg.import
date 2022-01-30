@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Border.ogg-a958094fb8a9b5438d948ac4b570ed2f.oggstr"
+
+[deps]
+
+source_file="res://music/sounds/Border.ogg"
+dest_files=[ "res://.import/Border.ogg-a958094fb8a9b5438d948ac4b570ed2f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
